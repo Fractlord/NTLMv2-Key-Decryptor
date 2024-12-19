@@ -18,20 +18,24 @@ A Python-based tool to simulate NTLMv2 authentication processes and decrypt sess
 
 ## Usage
 
-Command-Line Arguments
-Argument	Description	Example
--u, --user	Username (uppercase)	mrealman
--d, --domain	Domain name (uppercase)	WORKGROUP
--p, --password	Password or NTLM hash	Blockbuster1
--n, --ntproofstr	NTProofStr in hex format	0ca6227a4f00b9654a48908c4801a0ac
--k, --key	Encrypted session key (hex)	c24f5102a22d286336aac2dfa4dc2e04
--v, --verbose	Optional, verbose output	--verbose
+### Command-Line Arguments
 
+| Argument         | Description                              | Example                           |
+|------------------|------------------------------------------|-----------------------------------|
+| `-u`, `--user`   | Username (uppercase)                     | `mrealman`                        |
+| `-d`, `--domain` | Domain name (uppercase)                  | `WORKGROUP`                       |
+| `-p`, `--password` | Password or NTLM hash                  | `Blockbuster1`                    |
+| `-n`, `--ntproofstr` | NTProofStr in hex format             | `0ca6227a4f00b9654a48908c4801a0ac`|
+| `-k`, `--key`    | Encrypted session key (hex)              | `c24f5102a22d286336aac2dfa4dc2e04`|
+| `-v`, `--verbose` | Optional, verbose output                | `--verbose`                       |
 
-## Running the script
+### Example Usage
 
- ```bash
-python ntlm_key_decryptor.py -u <USERNAME> -d <DOMAIN> -p <PASSWORD> -n <NTPROOFSTR> -k <ENCRYPTED_SESSION_KEY>
+Run the script with the required arguments:
+
+```bash
+python ntlmv2_key_decryptor.py -u mrealman -d WORKGROUP -p Blockbuster1 -n 0ca6227a4f00b9654a48908c4801a0ac -k c24f5102a22d286336aac2dfa4dc2e04 --verbose
+
 
 
 
