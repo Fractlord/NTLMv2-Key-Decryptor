@@ -36,7 +36,7 @@ cd NTLMv2-Key-Decryptor
 ### Example Usage
 
 ```bash
-python ntlmv2_decryptor.py -u mrealman -d WORKGROUP -p Blockbuster1 -n 0ca6227a4f00b9654a48908c4801a0ac -k c24f5102a22d286336aac2dfa4dc2e04 --verbose
+python ntlmv2_decryptor.py -u USERNAME -d DOMAIN -p SOMEPASSWORD -n 0ca6227a4f00b9654a48908c4801a0ac -k c24f5102a22d286336aac2dfa4dc2e04 --verbose
 ```
 
 ### Example Output
