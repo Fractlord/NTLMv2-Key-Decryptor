@@ -26,9 +26,9 @@ cd NTLMv2-Key-Decryptor
 
 | Argument       | Description                                   | Example                                      |
 |----------------|-----------------------------------------------|----------------------------------------------|
-| `-u, --user`    | Username (uppercase)                          | `mrealman`                                   |
-| `-d, --domain`  | Domain name (uppercase)                       | `WORKGROUP`                                  |
-| `-p, --password`| Password or NTLM hash                         | `Blockbuster1`                               |
+| `-u, --user`    | Username (uppercase)                          | `username`                                   |
+| `-d, --domain`  | Domain name (uppercase)                       | `domain`                                  |
+| `-p, --password`| Password or NTLM hash                         | `somepassword`                               |
 | `-n, --ntproofstr` | NTProofStr in hex format                    | `0ca6227a4f00b9654a48908c4801a0ac`          |
 | `-k, --key`     | Encrypted session key (hex)                   | `c24f5102a22d286336aac2dfa4dc2e04`          |
 | `-v, --verbose` | Optional, verbose output                      | `--verbose`                                  |
@@ -46,7 +46,7 @@ python ntlmv2_decryptor.py -u mrealman -d WORKGROUP -p Blockbuster1 -n 0ca6227a4
 When verbose mode is enabled (`--verbose`), the script provides detailed output:
 
 ```
-USER WORK: MREALMAN\WORKGROUP
+USER WORK: username\domain
 PASS HASH: 8846f7eaee8fb117ad06bdd830b7586c
 RESP NT:   9e107d9d372bb6826bd81d3542a419d6
 NT PROOF:  0ca6227a4f00b9654a48908c4801a0ac
