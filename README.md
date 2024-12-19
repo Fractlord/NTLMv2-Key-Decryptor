@@ -1,13 +1,11 @@
-# NTLMv2-Key-Decryptor
+# NTLMv2 Key Decryptor
 
-
-
-This Python project simulates NTLMv2 authentication processes to derive and decrypt the session key used in SMB traffic decryption. It is educational and provides insight into NTLM's cryptographic mechanisms.
+A Python-based tool to simulate NTLMv2 authentication processes and decrypt session keys for SMB traffic decryption. This project provides insights into the cryptographic mechanisms of NTLMv2 and serves educational purposes in network security.
 
 ## Features
-- Simulates NTLMv2 key exchange processes.
+- Simulates NTLMv2 key exchange and session key derivation.
 - Decrypts session keys using RC4.
-- Outputs a decrypted session key for SMB traffic decryption.
+- Outputs decrypted session keys for SMB traffic analysis (e.g., in Wireshark).
 
 ## Requirements
 - Python 3.6+
@@ -16,4 +14,4 @@ This Python project simulates NTLMv2 authentication processes to derive and decr
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/NTLM-Key-Decryptor.git
+   git clone https://github.com/Fractlord/NTLMv2-Key-Decryptor.git
