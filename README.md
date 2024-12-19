@@ -37,6 +37,18 @@ Run the script with the required arguments:
 python ntlmv2_key_decryptor.py -u mrealman -d WORKGROUP -p Blockbuster1 -n 0ca6227a4f00b9654a48908c4801a0ac -k c24f5102a22d286336aac2dfa4dc2e04 --verbose
 
 
+ ## Example Output
+
+### Verbose Mode
+When verbose mode is enabled (`--verbose`), the script provides detailed output:
+
+```yaml
+USER WORK: MREALMAN\WORKGROUP
+PASS HASH: 8846f7eaee8fb117ad06bdd830b7586c
+RESP NT:   9e107d9d372bb6826bd81d3542a419d6
+NT PROOF:  0ca6227a4f00b9654a48908c4801a0ac
+KeyExKey:  c24f5102a22d286336aac2dfa4dc2e04
+Random SK: 0123456789abcdef0123456789abcdef
 
 
 
