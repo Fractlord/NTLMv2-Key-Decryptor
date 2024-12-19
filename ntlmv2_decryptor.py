@@ -11,9 +11,9 @@ def generateEncryptedSessionKey(keyExchangeKey, exportedSessionKey):
 
 # Set up command-line argument parser
 parser = argparse.ArgumentParser(description="Calculate the Random Session Key based on data from a PCAP (maybe).")
-parser.add_argument("-u", "--user", required=True, help="Username (e.g., mrealman)")
-parser.add_argument("-d", "--domain", required=True, help="Domain name (e.g., WORKGROUP)")
-parser.add_argument("-p", "--password", required=True, help="Password or NTLM hash (e.g., Blockbuster1)")
+parser.add_argument("-u", "--user", required=True, help="Username (e.g., george)")
+parser.add_argument("-d", "--domain", required=True, help="Domain name (e.g., DOMAIN)")
+parser.add_argument("-p", "--password", required=True, help="Password or NTLM hash (e.g., password)")
 parser.add_argument("-n", "--ntproofstr", required=True, help="NTProofStr in hex format (e.g., 0ca6227a4f00b9654a48908c4801a0ac)")
 parser.add_argument("-k", "--key", required=True, help="Encrypted session key in hex (e.g., c24f5102a22d286336aac2dfa4dc2e04)")
 parser.add_argument("-v", "--verbose", action="store_true", help="Increase output verbosity")
